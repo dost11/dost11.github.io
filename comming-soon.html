@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOST11</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #121B2C;
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+        }
+        nav ul li {
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+        }
+        .gradient-bg {
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(107, 45, 254, 0.15) 0%, rgba(18, 27, 44, 0) 25%),
+                radial-gradient(circle at 80% 70%, rgba(107, 45, 254, 0.1) 0%, rgba(18, 27, 44, 0) 25%);
+        }
+        .gradient-text {
+            background: linear-gradient(to left, #9370DB, #483D8B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .mobile-menu {
+            transform: translateY(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .mobile-menu.active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<div class="text-white">
+    <header class="fixed w-full bg-opacity-80 bg-gray-900 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="#">
+                    <img src="img/logo.png" alt="DOST ELEVEN" class="h-8 mr-2">
+                </a>
+            </div>
+            <!-- <nav class="container mx-auto px-4 py-3">
+                <div id="mobile-menu" class="mobile-menu fixed w-full bg-gray-900 bg-opacity-95 z-40 top-16 left-0 right-0 h-auto max-h-[50vh] overflow-y-auto md:hidden">
+                    <ul class="py-4 px-6 space-y-4">
+                        <li><a href="#video_scoover" class="block py-2 hover:text-purple-400"><span class="lang-ko">비디오 스쿠버</span><span class="lang-en hidden">Video Scoover</span></a></li>
+                        <li><a href="#video_metadata" class="block py-2 hover:text-purple-400"><span class="lang-ko">비디오 메타데이터</span><span class="lang-en hidden">Video Metadata</span></a></li>
+                        <li><a href="#face_scoover" class="block py-2 hover:text-purple-400"><span class="lang-ko">페이스 스쿠버</span><span class="lang-en hidden">Face Scoover</span></a></li>
+                        <li><a href="#colaboration" class="block py-2 hover:text-purple-400"><span class="lang-ko">협업</span><span class="lang-en hidden">Collaboration</span></a></li>
+                    </ul>
+                </div>
+                <div class="container mx-auto px-4 flex justify-between items-center">
+                    
+                    <nav class="container mx-auto px-4 py-3">
+                        <ul class="flex flex-wrap justify-center space-x-4 md:space-x-8">
+                            <li><a href="#video_scoover" class="hover:text-purple-400 text-sm md:text-base">Video Scoover</a></li>
+                            <li><a href="#video_metadata" class="hover:text-purple-400 text-sm md:text-base">Metadata</a></li>
+                            <li><a href="#face_scoover" class="hover:text-purple-400 text-sm md:text-base">Video Scoover</a></li>
+                            <li><a href="#colaboration" class="hover:text-purple-400 text-sm md:text-base">Colaboration</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="flex justify-between items-right">
+                    <div class="flex items-center space-x-4">
+                        <select id="lang-select" class="bg-purple-600 text-white px-2 py-1 rounded text-sm">
+                            <option value="ko">한국어</option>
+                            <option value="en">English</option>
+                        </select>
+                        <button id="menu-toggle" class="md:hidden">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </nav>    -->
+            <div>
+                <span><a href="#">KOR</a></span>  |
+                <span><a href="comming-soon-en.html">ENG</a></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 md:px-6">
+        <section id="coming-soon" class="min-h-screen flex items-center justify-center gradient-bg">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4"><span class="lang-ko">곧 보아요!</span></h2>
+                <p class="text-lg md:text-xl max-w-2xl mx-auto">
+                    <span class="lang-ko">더 편리한 사이트로 찾아오기 위해서 열심히 준비 중이에요.</span>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-center py-4">
+        <p class="text-sm md:text-base">&copy; 2024 DOST11, All rights reserved.</p>
+    </footer>
+</body>
+</html>
