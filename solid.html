@@ -1,0 +1,570 @@
+import { createSignal } from 'solid-js'; function MyComponent() { const [audioTime, setAudioTime] =
+createSignal('00:00'); return (
+<div class="flex flex-col">
+  <header class="flex flex-col pb-9 w-full bg-slate-900 max-md:max-w-full">
+    <nav class="flex flex-col justify-center w-full text-lg font-semibold max-md:max-w-full">
+      <div class="flex justify-center items-center px-16 py-8 w-full bg-slate-900 max-md:px-5 max-md:max-w-full">
+        <div class="flex gap-5 justify-between w-full max-w-[1335px] max-md:flex-wrap max-md:max-w-full">
+          <img
+            class="shrink-0 max-w-full aspect-[11.11] w-[315px]"
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/8bc7c88f0d1f997d419eacb512eb71068c3b86ac77a162dba54384f4009cbdb7?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+            alt="Company logo"
+          />
+          <div class="flex gap-5 self-start mt-2 max-md:flex-wrap max-md:max-w-full">
+            <div class="flex flex-auto gap-5 justify-between text-neutral-100 max-md:flex-wrap max-md:max-w-full">
+              <a href="#" class="text-indigo-300">Ai Product</a>
+              <a href="#" class="text-neutral-100">Company</a>
+              <a href="#" class="text-neutral-100">News</a>
+              <a href="#" class="text-neutral-100">Career</a>
+            </div>
+            <div class="flex gap-3.5 self-start whitespace-nowrap">
+              <button class="text-neutral-100">Kor</button>
+              <div class="shrink-0 w-0.5 border-2 border-solid bg-zinc-500 border-zinc-500 h-[18px]"></div>
+              <button class="text-indigo-300">Eng</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section
+      class="flex flex-col self-center px-5 mt-72 w-full font-medium max-w-[1328px] text-neutral-100 max-md:mt-10 max-md:max-w-full"
+    >
+      <h1 class="text-3xl tracking-tighter max-md:max-w-full">스마트한 프리뷰와 인덱싱{" "}</h1>
+      <h2 class="mt-7 text-8xl tracking-tighter bg-clip-text max-md:max-w-full max-md:text-4xl">
+        AI 프리뷰 솔루션. 비디오 스쿠버
+      </h2>
+      <div
+        class="flex gap-5 justify-between mt-10 text-xl tracking-tight max-md:flex-wrap max-md:mt-10 max-md:max-w-full"
+      >
+        <div class="flex flex-col max-md:max-w-full">
+          <p class="max-md:max-w-full">
+            귀찮고, 힘들고, 오래 걸리는 프리뷰, 손 쉽게 해결해 보세요
+            <br />
+            인공지능 AI가 영상을 대신 분석하여 자동 인덱싱하고 프리뷰를 제공합니다.
+            <br />
+            스마트한 영상 관리로 더 나은 효율성을 경험하세요.
+          </p>
+          <img
+            class="self-end mt-96 aspect-[1.27] w-[67px] max-md:mt-10"
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/a59b21886e715921f9201fd6ca4cf74f743ca5c654f2801844e939b033f1507e?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+            alt=""
+          />
+        </div>
+        <img
+          class="shrink-0 my-auto max-w-full aspect-square w-[297px]"
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/5d59b6ed58a88cfd689061b8ba5d878c096ad0a5cde3083563a46fae69ed500e?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+          alt="AI preview solution illustration"
+        />
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="flex flex-col items-center px-16 pt-20 w-full bg-slate-900 max-md:px-5 max-md:max-w-full">
+      <div
+        class="flex flex-col items-center p-20 mt-28 max-w-full border border-indigo-300 border-solid backdrop-blur-[2px] rounded-[50px_50px_0px_0px] w-[659px] max-md:px-5 max-md:mt-10"
+      >
+        <img
+          class="mt-32 max-w-full aspect-[2.78] w-[367px] max-md:mt-10"
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/91239c1c25473d73a48fd86c794d1ec1fb9ffb862a61fec7aa3fbab2cb27f392?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+          alt="Web service illustration"
+        />
+        <p
+          class="self-stretch mt-40 text-xl tracking-tight text-center text-indigo-300 max-md:mt-10 max-md:mr-1.5 max-md:max-w-full"
+        >
+          <span class="font-bold">간편한 웹 서비스</span>를 통해 만나는
+          <span class="font-bold text-indigo-300"> 신개념 AI 영상 분석 서비스 </span>
+          <br />
+          방대한 양의 영상의 프리뷰, 비디오 스쿠버로 분석해 드립니다.{" "}
+        </p>
+        <button
+          class="flex gap-0.5 justify-center py-4 pr-7 pl-8 mt-24 mb-8 text-3xl font-medium whitespace-nowrap bg-violet-600 rounded-xl leading-[48.6px] text-neutral-100 max-md:px-5 max-md:mt-10"
+        >
+          <span>문의하기</span>
+          <img
+            class="shrink-0 my-auto aspect-square fill-neutral-100 w-[43px]"
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/560e10c05cb0055c9e2354cb6399603f8f2b60e3cf35cd7f043692ca2a4be245?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+            alt=""
+          />
+        </button>
+      </div>
+    </section>
+    <section class="flex flex-col items-center px-16 pt-20 pb-10 w-full bg-slate-900 max-md:px-5 max-md:max-w-full">
+      <div class="flex flex-col mt-72 w-full max-w-[1472px] max-md:mt-10 max-md:max-w-full">
+        <h2 class="text-3xl font-medium tracking-tighter text-neutral-100 max-md:max-w-full">
+          쉽고 빠른 얼굴 인식 솔루션
+        </h2>
+        <h3
+          class="mt-7 text-8xl font-medium tracking-tighter bg-clip-text text-neutral-100 max-md:max-w-full max-md:text-4xl"
+        >
+          AI 인물 식별. 페이스 스쿠버
+        </h3>
+        <p class="mt-10 text-xl tracking-tight text-neutral-100 max-md:mt-10 max-md:max-w-full">
+          복잡한 인물 학습 과정은 이제 그만, 누구든 빠르고 정확하게 인물 데이터베이스에 추가해보세요.
+          <br />
+          인물 데이터를 손쉽게 확보하고, 특정 인물의 식별을 신속하게 처리합니다.
+        </p>
+        <div
+          class="flex gap-5 justify-between items-start self-end mt-11 max-w-full w-[839px] max-md:flex-wrap max-md:mt-10"
+        >
+          <img
+            class="shrink-0 self-end mt-80 aspect-[1.27] w-[67px] max-md:mt-10"
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/a2314d07540b8c437b414690e684407899d49f26d47e1d06e93c6fb6cd1ed7ca?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+            alt=""
+          />
+          <img
+            class="self-start w-full aspect-[1.37] max-md:max-w-full"
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/c13c58306d77641875d48d25e461d9f02539a1e52a0759ef611b455e4c580077?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+            alt="Face recognition illustration"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="w-full bg-slate-900 min-h-[1080px] max-md:max-w-full"></section>
+    <section
+      class="flex justify-center items-center px-16 w-full text-3xl font-medium tracking-tighter bg-slate-900 max-md:px-5 max-md:max-w-full"
+    >
+      <div class="flex z-10 flex-col pt-12 mt-0 max-w-full rounded-[50px_50px_0px_0px] w-[1177px] max-md:mt-0">
+        <div
+          class="flex justify-center items-center px-16 py-20 border border-indigo-300 border-solid backdrop-blur-[2px] rounded-[50px_50px_0px_0px] max-md:px-5 max-md:max-w-full"
+        >
+          <div class="flex flex-col items-center mt-28 mb-32 max-w-full w-[968px] max-md:my-10">
+            <h3 class="text-indigo-300 max-md:max-w-full">
+              페이스 스쿠버가 인물 1명을{" "}
+              <span class="font-bold text-indigo-300">학습</span>하는 데 걸리는 시간은?
+            </h3>
+            <p class="mt-36 text-8xl font-bold tracking-tighter bg-clip-text max-md:mt-10 max-md:text-4xl">단, 2분</p>
+            <div class="flex gap-5 mt-52 max-w-full text-neutral-100 w-[850px] max-md:flex-wrap max-md:mt-10">
+              <div class="flex flex-1 gap-5 self-start">
+                <img
+                  class="shrink-0 aspect-[1.39] w-[95px]"
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/bb656dd81e76ba4c778397d6153ac9d36b7895626ab5a0a3919aa8601356e7a7?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+                  alt=""
+                />
+                <div class="flex-auto">
+                  <span class="text-2xl">누구나 쉽게 사용하도록</span>
+                  <br />
+                  <span class="font-bold">손쉽게 만든 관리자 UI</span>
+                </div>
+              </div>
+              <div class="flex flex-1 gap-5">
+                <img
+                  class="shrink-0 rounded aspect-square w-[70px]"
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/a2debf9f915292164539036cb72b77019551f956700b31837a17eca9b315fee7?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+                  alt=""
+                />
+                <div class="flex-auto my-auto">
+                  <span class="text-2xl">데이터베이스 생성에 필요한</span>
+                  <br />
+                  <span class="font-bold">인물 사진은 10장 이하</span>
+                </div>
+              </div>
+            </div>
+            <img
+              class="self-stretch mt-60 w-full aspect-[1.67] max-md:mt-10 max-md:max-w-full"
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/4c990ff93df35e4626cf800d39f4ab550cee02efc9f08d0cb5a85b54d77b2df4?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+              alt="Face recognition process illustration"
+            />
+            <h4
+              class="self-stretch mx-14 mt-28 text-6xl font-bold tracking-tighter bg-clip-text max-md:mt-10 max-md:mr-2.5 max-md:max-w-full max-md:text-4xl"
+            >
+              8장의 사진만으로 인물 식별 학습 완료
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flex flex-col items-center px-16 pt-20 pb-10 w-full bg-slate-900 max-md:px-5 max-md:max-w-full">
+      <div class="flex flex-col mt-72 w-full max-w-[1322px] max-md:mt-10 max-md:max-w-full">
+        <h2 class="text-3xl font-medium tracking-tighter text-neutral-100 max-md:max-w-full">
+          직접 작성하던 단신 기사는 안녕!
+        </h2>
+        <h3
+          class="mt-7 text-8xl font-medium tracking-tighter bg-clip-text text-neutral-100 max-md:max-w-full max-md:text-4xl"
+        >
+          AI 기사 요약. 아티클 서머라이저
+        </h3>
+        <p class="mt-10 text-xl tracking-tight text-neutral-100 max-md:mt-10 max-md:max-w-full">
+          매번 직접 작성하던 단신 기사는 안녕! 기사를 자동으로 요약하여 방송 뉴스의 제작 과정을 혁신합니다.
+          <br />
+          자동 요약으로 더 쉽고 빠르게 방송 뉴스를 만들어 보세요.
+        </p>
+        <div class="flex flex-col self-end mt-16 max-w-full w-[694px] max-md:mt-10">
+          <img
+            class="self-end max-w-full aspect-square w-[298px]"
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/55e6fedfca9abf7bdb080d6326818be6643adbca177f4f3d8a00a654031ac6eb?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+            alt="Article summarizer illustration"
+          />
+          <img
+            class="mt-6 aspect-[1.27] w-[67px]"
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/31f2eaa2c13baccebc1bad8e7387d0d26b86c63d84b8c36ed2e87b383e0b2f34?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section class="flex flex-col items-center px-16 pt-20 w-full bg-slate-900 max-md:px-5 max-md:max-w-full">
+      <div
+        class="flex flex-col px-11 pt-10 pb-20 mt-28 max-w-full border border-indigo-300 border-solid backdrop-blur-[2px] rounded-[50px_50px_0px_0px] w-[1287px] max-md:px-5 max-md:mt-10"
+      >
+        <div class="flex flex-col justify-center mb-9 rounded-3xl bg-neutral-100 max-md:max-w-full">
+          <div
+            class="flex overflow-hidden relative flex-col justify-center px-5 py-5 w-full min-h-[696px] max-md:max-w-full"
+          >
+            <img
+              class="object-cover absolute inset-0 size-full"
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec0f9685d84948c7e94f2a9055098313cfa5a911d18e27834d66380589aa9cbb?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+              alt="Background image"
+            />
+            <div class="flex relative flex-col justify-center max-md:max-w-full">
+              <div
+                class="flex gap-5 px-12 pt-14 pb-20 bg-white border border-white border-solid max-md:flex-wrap max-md:px-5"
+              >
+                <div class="flex flex-col self-start text-sm text-slate-900">
+                  <h4
+                    class="justify-center px-4 py-2 text-base font-bold leading-6 bg-white border border-solid border-slate-200 max-md:px-5"
+                  >
+                    요약 히스토리
+                  </h4>
+                  <div class="flex flex-col justify-center mt-3 leading-5">
+                    <div class="flex flex-col justify-center">
+                      <div class="justify-center px-3 py-2 bg-white rounded-md border border-solid border-slate-300">
+                        Pietro 2024-04-24
+                        <br />
+                        06:58 - 제목:
+                        <br />
+                        '미국 대학 캠퍼스 내 갈라진 가자 전쟁 시위"
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="justify-center px-4 py-2 mt-3 font-medium leading-6 rounded-md border border-solid bg-slate-100 border-slate-300 text-slate-900 max-md:px-5"
+                  >
+                    Export to file
+                  </button>
+                </div>
+                <div class="flex flex-auto gap-2.5 max-md:flex-wrap">
+                  <div
+                    class="flex flex-col px-4 py-5 text-sm leading-6 bg-white rounded-lg border border-solid border-slate-300 max-md:max-w-full"
+                  >
+                    <div
+                      class="flex gap-2.5 px-3 py-2 whitespace-nowrap bg-white rounded-md border border-solid border-slate-300 text-slate-900"
+                    >
+                      <div class="flex-1">정치</div>
+                      <img
+                        class="shrink-0 my-auto aspect-square w-[15px]"
+                        loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/8bdd2c99d51312185444dd463cbdd3a4bf753656d6bda3d77be350f5ef54d71c?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+                        alt=""
+                      />
+                    </div>
+                    <div class="flex flex-col justify-center mt-3 text-base leading-6 text-slate-400">
+                      <div class="flex flex-col justify-center">
+                        <div
+                          class="justify-center items-start px-3 py-2 bg-white rounded-md border border-solid border-slate-300 max-md:pr-5"
+                        >
+                          기사 URL을 입력하세요
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      class="justify-center items-center px-4 py-2 mt-3 font-medium text-white whitespace-nowrap rounded-md bg-slate-700 max-md:px-5"
+                    >
+                      불러오기
+                    </button>
+                    <div class="flex flex-col justify-center mt-7 text-black">
+                      <div class="justify-center px-3 py-2 bg-white rounded-md border border-solid border-slate-300">
+                        the campus
+                        <br />
+                        <br />
+                        <br />
+                        Gaza war demonstrations have also cropped up at colleges in the US Midwest and on the West
+                        Coast, where one campus has been closed.
+                        <br />
+                        <br />
+                        Nine students were arrested in Minneapolis on Tuesday morning as they attempted to set up a
+                        protest camp in front of a library on the University of Minnesota campus.
+                        <br />
+                        <br />
+                        In New York on Tuesday, several hundred protesters were gathered near the NYU campus in
+                        Washington Square Park.
+                        <br />
+                        The crowd chanted "shame, shame" and protesters criticised New York city police and university
+                        administrators...
+                      </div>
+                    </div>
+                    <button
+                      class="justify-center items-center px-4 py-2 mt-3 font-medium text-white whitespace-nowrap rounded-md bg-slate-700 max-md:px-5"
+                    >
+                      요약하기
+                    </button>
+                  </div>
+                  <img
+                    class="shrink-0 my-auto aspect-square w-[45px]"
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/58730a704df485ed5e6b3a592bc79f6a52b7648b3afaaac5c2f70868eb377ce0?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+                    alt=""
+                  />
+                  <div
+                    class="flex flex-col px-4 py-6 bg-white rounded-lg border border-solid border-slate-300 max-md:max-w-full"
+                  >
+                    <div class="flex flex-col justify-center text-sm text-black">
+                      <div class="flex flex-col justify-center">
+                        <div class="justify-center px-3 py-2 bg-white rounded-md border border-solid border-slate-300">
+                          제목: "미국 대학 캠퍼스 내 갈라진 가자 전쟁 시위"
+                          <br />
+                          <br />
+                          콜롬비아 대학은 영향을 받은 가자 전쟁 시위로 학기 종료까지 원격수업을 계속할 것이라고
+                          발표했습니다.
+                          <br />
+                          <br />
+                          이 대학에서는 학교 시설을 비난하고 방해하는 학생들을 규탄하며, 몇몇 학생들은 지루한 토론과
+                          위협에 노출되었다고 보고했습니다.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col justify-center mt-6 text-sm text-black">
+                      <div class="flex flex-col">
+                        <div class="font-medium leading-[100%]">편집기</div>
+                        <div
+                          class="justify-center px-3 py-2 mt-2 bg-white rounded-md border border-solid border-slate-300"
+                        >
+                          제목: "미국 대학 캠퍼스 내 갈라진 가자 전쟁 시위"
+                          <br />
+                          <br />
+                          골롬비아 대학은 영향을 받은 가자 전쟁 시위로 학기 종료까 지 원격수업을 계속할 것이라고
+                          발표했습니다.
+                          <br />
+                          <br />
+                          이 대학에서는 학교 시설을 비난하고 방해하는 학생들을 규 탄하며, 몇몇 학생들은 지루한 토론과
+                          위협에 노출 되었다고 보고했습니다.
+                          <br />
+                          <br />
+                          미국 전역의 고등 교육기관에서 학생들 간의 갈등이 촉발되는 동안, 아직까지 공식적으로 어떤 제재
+                          조치를 취할지에 대한 구체적인 내용은 없습니다.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex gap-1.5 justify-between items-center px-3 py-3 mt-6 rounded-3xl bg-slate-100">
+                      <button class="shrink-0 self-stretch aspect-square w-[15px]" aria-label="Play">
+                        <img
+                          src="https://cdn.builder.io/api/v1/image/assets/TEMP/1cb8dd6d4f03c74a3e19b07b3c606bfd9a86198efa707e4bdbd29f8927d0b159?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+                          alt=""
+                        />
+                      </button>
+                      <div class="self-stretch my-auto text-xs text-black">{audioTime()}</div>
+                      <div class="flex flex-col justify-center self-stretch my-auto">
+                        <div class="flex flex-col justify-center bg-slate-300 rounded-[37.335px]">
+                          <div
+                            class="flex flex-col justify-center items-end px-16 bg-slate-700 rounded-[37.335px] max-md:pl-5"
+                          >
+                            <div
+                              class="shrink-0 bg-white rounded-full border border-solid border-slate-700 h-[5px] w-[9px]"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="self-stretch my-auto text-xs text-black">00:48</div>
+                      <button class="shrink-0 self-stretch aspect-square w-[15px]" aria-label="Stop">
+                        <img
+                          src="https://cdn.builder.io/api/v1/image/assets/TEMP/67112bb51faa3535ea92b9b2e7e3eed2ad15360ffa8a09ac24f03cd52413669d?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+                          alt=""
+                        />
+                      </button>
+                      <button class="shrink-0 self-stretch my-auto aspect-square w-[11px]" aria-label="Download">
+                        <img
+                          src="https://cdn.builder.io/api/v1/image/assets/TEMP/97c341c97732feb1dc7213610cab4137476bfce2e12e5b3113f895195e6a731e?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+                          alt=""
+                        />
+                      </button>
+                    </div>
+                    <button
+                      class="justify-center items-center px-4 py-2 mt-4 text-sm font-medium leading-6 text-white whitespace-nowrap rounded-md bg-slate-700 max-md:px-5"
+                    >
+                      저장하기
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flex flex-col items-center px-16 pt-20 pb-10 w-full bg-slate-900 max-md:px-5 max-md:max-w-full">
+      <div class="flex flex-col mt-72 max-w-full w-[1086px] max-md:mt-10">
+        <h2 class="text-3xl font-medium tracking-tighter text-neutral-100 max-md:max-w-full">
+          기자를 위한 가장 편리한 현장 취재 솔루션
+        </h2>
+        <h3
+          class="mt-7 text-8xl font-medium tracking-tighter bg-clip-text text-neutral-100 max-md:max-w-full max-md:text-4xl"
+        >
+          도스트일레븐 <span class="text-neutral-100">X</span> 소보로
+        </h3>
+        <p class="mt-10 text-xl tracking-tight text-neutral-100 max-md:mt-10 max-md:max-w-full">
+          실시간 받아쓰기 기능을 통해 방송 제작 현장의 효율성을 극대화합니다.
+          <br />
+          실시간 텍스트 변환으로 방송 제작의 새로운 동반자가 되어드립니다.
+          <br />
+          <br />
+        </p>
+        <div class="flex z-10 flex-col self-end max-w-full w-[949px]">
+          <img
+            class="w-full aspect-[4.55] fill-[linear-gradient(90deg,rgba(126,108,255,0.00)_34.46%,rgba(119,86,255,0.60)_50.84%,rgba(109,52,254,0.60)_74.16%,rgba(107,45,254,0.00)_100%)] max-md:max-w-full"
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/bcc8a624ba7c8ef7e0128348e95588cf6bfbf82012316104684c9dfdbdd13faf?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+            alt="Gradient illustration"
+          />
+          <img
+            class="self-center mt-44 ml-14 aspect-[1.27] w-[67px] max-md:mt-10"
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/8849de98d6c4ed57c3c75509ef88fb18deb69babe7d3026cf8f0ab1a49b4020d?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section class="flex flex-col items-center px-16 pt-20 pb-2.5 w-full bg-slate-900 max-md:px-5 max-md:max-w-full">
+      <div
+        class="flex overflow-hidden relative flex-col justify-center items-start px-16 py-16 mt-48 max-w-full min-h-[804px] w-[1340px] max-md:px-5 max-md:mt-10"
+      >
+        <img
+          class="object-cover absolute inset-0 size-full"
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/cea1a8adf0e373a86d9ec9af79513a1b39dca1df349c76bbeb700f098cc05fb2?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+          alt="Background image"
+        />
+        <div class="flex relative flex-col mb-14 ml-16 max-w-full w-[641px] max-md:mb-10">
+          <div class="text-xl tracking-tight text-neutral-100 max-md:max-w-full">
+            <h2 class="text-5xl font-bold">이제, 받아치기는 그만.</h2>
+            <br />
+            <br />
+            기자들의 현장 취재를 쉽게 해주는 받아치기 솔루션을 소개합니다.
+          </div>
+          <h3 class="self-end mt-96 text-6xl font-bold tracking-tighter bg-clip-text max-md:mt-10 max-md:text-4xl">
+            음성신호
+          </h3>
+        </div>
+      </div>
+    </section>
+    <section
+      class="flex justify-center items-center px-16 w-full text-6xl font-bold bg-slate-900 max-md:px-5 max-md:max-w-full max-md:text-4xl"
+    >
+      <div
+        class="flex z-10 flex-col py-20 mt-0 max-w-full border border-indigo-300 border-solid backdrop-blur-[2px] rounded-[50px_50px_0px_0px] w-[1287px] max-md:mt-0 max-md:text-4xl"
+      >
+        <div
+          class="flex flex-col items-center px-20 mt-[732px] max-md:px-5 max-md:mt-10 max-md:max-w-full max-md:text-4xl"
+        >
+          <img
+            class="max-w-full aspect-[3.45] w-[562px]"
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/8c7a77b998235166c33ef37e6a8739e14155907f3b384087ba112199f609f10b?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+            alt="Batch STT Model illustration"
+          />
+          <h3 class="self-stretch mt-7 text-3xl text-neutral-100 max-md:max-w-full">Batch STT Model</h3>
+          <div
+            class="flex justify-center items-center self-stretch px-16 py-20 mt-7 text-center whitespace-nowrap rounded-xl border border-violet-600 border-solid bg-violet-600 bg-opacity-10 max-md:px-5 max-md:max-w-full max-md:text-4xl"
+          >
+            <div class="flex gap-5 items-center max-w-full w-[882px] max-md:flex-wrap max-md:text-4xl">
+              <div class="flex-auto self-stretch my-auto bg-clip-text max-md:text-4xl">Encoder</div>
+              <img
+                class="shrink-0 self-stretch aspect-[0.85] w-[84px]"
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/048594a9e2ecb216542f4090bda3a1bd28a1286fc71683200656ea2cfd18d8e0?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+                alt=""
+              />
+              <div class="flex-auto self-stretch my-auto bg-clip-text max-md:text-4xl">Decoder</div>
+            </div>
+          </div>
+          <img
+            class="max-w-full aspect-[3.45] w-[562px]"
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/b9b379c2c6d210aee8cf2f40d8e9bc34f783af923f29a01160ff7fc36f76ae3d?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+            alt="Speech-to-text process illustration"
+          />
+          <h4 class="mt-16 tracking-tighter bg-clip-text max-md:mt-10 max-md:text-4xl">받아쓰기 결과</h4>
+        </div>
+        <div
+          class="flex justify-center items-center self-center px-16 py-10 mt-32 mb-6 max-w-full tracking-tighter rounded-xl border border-violet-600 border-solid bg-violet-600 bg-opacity-10 w-[1133px] max-md:px-5 max-md:mt-10 max-md:text-4xl"
+        >
+          <p class="bg-clip-text max-md:max-w-full max-md:text-4xl">실시간 자동 음성 인식 &gt; 텍스트 변환</p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="flex z-10 flex-col justify-center items-start px-16 py-20 mt-0 w-full font-medium max-md:px-5 max-md:mt-0 max-md:max-w-full"
+    >
+      <div class="flex flex-col mt-96 mb-80 ml-56 max-w-full w-[911px] max-md:my-10">
+        <h2 class="text-8xl tracking-tighter text-lime-300 max-md:max-w-full max-md:text-4xl">
+          누구나 쉽게
+          <br />
+          <span class="text-lime-300">원하는 영상</span>을 찾는 세상{" "}
+          <span class="text-lime-300">!</span>
+        </h2>
+        <p class="mt-24 text-4xl tracking-tighter text-neutral-100 max-md:mt-10 max-md:max-w-full">
+          AI 기반 방송 혁신의 선두주자
+          <br />
+          도스트일레븐이 만드는 미래입니다.
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer class="flex flex-col items-center px-5 pb-20 w-full bg-violet-600 max-md:max-w-full">
+    <div class="flex z-10 flex-col self-stretch py-20 mt-0 w-full bg-violet-600 max-md:mt-0 max-md:max-w-full">
+      <img
+        class="self-center mt-64 aspect-[1.27] w-[67px] max-md:mt-10"
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/9ff040db68d20e62e4d904e22c702e243712e8a8190bc2af75574813ac457e13?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+        alt=""
+      />
+      <div class="mt-14 mb-28 w-full min-h-[298px] max-md:my-10 max-md:max-w-full"></div>
+    </div>
+    <p class="z-10 mt-0 text-lg tracking-tight text-center text-neutral-100 max-md:max-w-full">
+      <span class="font-bold text-neutral-100">도스트일레븐은</span>
+      <br />
+      <span class="text-neutral-100">최신 AI 기술</span>을 활용해{" "}
+      <span class="text-neutral-100">방송 산업을 혁신</span>하는{" "}
+      <span class="text-neutral-100">전문 기업</span>입니다.
+      <br />
+      AI 기술을 통해 방송 제작 워크 플로우를 간소화하고,
+      <br />
+      효율성을 높일 수 있는 다양한 솔루션을 제공하여,
+      <br />
+      사용자의 실무에 도움이 되는 서비스를 구축하고 있습니다.
+      <br />
+      영상 인덱싱, 인물 식별, 기사 요약, 실시간 받아쓰기 등
+      <br />
+      방송 제작의 모든 측면에서 최적화한 맞춤형 AI 기반 제품군을 통해
+      <br />
+      단순 반복업무에 시달리는 작업자들이 업무를 효율화 하고,
+      <br />
+      창의적인 작업에 몰두할 수 있는 환경을 만들어 나갑니다.
+    </p>
+    <button
+      class="flex gap-0.5 justify-center py-4 pr-7 pl-8 mt-28 mb-9 text-3xl font-medium whitespace-nowrap bg-indigo-300 rounded-xl leading-[48.6px] text-neutral-100 max-md:px-5 max-md:mt-10"
+    >
+      <span>Contact</span>
+      <img
+        class="shrink-0 my-auto aspect-square fill-neutral-100 w-[43px]"
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/560e10c05cb0055c9e2354cb6399603f8f2b60e3cf35cd7f043692ca2a4be245?apiKey=9eb9ddf2c8014bb3a145a7d490173d5b&"
+        alt=""
+      />
+    </button>
+  </footer>
+  <div class="w-full bg-violet-600 min-h-[1080px] max-md:max-w-full"></div>
+</div>
+); } export default MyComponent;
