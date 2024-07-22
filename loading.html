@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Animation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .sprite {
+            width: 150px;
+            height: 150px;
+            background-image: url('./img/sprite.png');
+            background-size: 10944px 152px; /* 전체 스프라이트 시트 크기 */
+            animation: play 3s steps(72) infinite;
+        }
+
+        @keyframes play {
+            from { background-position: 0 0; }
+            to { background-position: -10944px 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="sprite"></div>
+</body>
+</html>
