@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "innovations": "Innovations",
+    "solutions": "Solutions",
+    "about": "About Us"
+  },
+  "hero": {
+    "title": "Innovate Faster with",
+    "subtitle": "Dost11",
+    "description": "Empowering businesses with cutting-edge software solutions. From AI-driven analytics to seamless cloud integrations, Dost11 is shaping the future of technology.",
+    "exploreSolutions": "Explore Solutions",
+    "scheduleDemo": "Schedule a Demo"
+  },
+  "innovations": {
+    "title": "Cutting-Edge Innovations",
+    "description": "Discover how Dost11 can transform your business with our innovative technologies.",
+    "features": {
+      "ai": {
+        "title": "AI-Powered Analytics",
+        "description": "Harness the power of machine learning to derive actionable insights from your data."
+      },
+      "cloud": {
+        "title": "Cloud-Native Architecture",
+        "description": "Scalable, resilient, and efficient solutions built for the modern cloud ecosystem."
+      },
+      "security": {
+        "title": "Enterprise-Grade Security",
+        "description": "State-of-the-art security measures to protect your most valuable assets."
+      },
+      "performance": {
+        "title": "High-Performance Systems",
+        "description": "Optimized for speed and efficiency, our solutions deliver unparalleled performance."
+      }
+    }
+  },
+  "solutions": {
+    "title": "Our Solutions",
+    "description": "Discover how Dost11 can transform your business with our innovative technologies.",
+    "learnMore": "Learn More",
+    "videoScoover": {
+      "title": "VideoScoover",
+      "description": "AI-powered video analysis and content recommendation system."
+    },
+    "aiCG": {
+      "title": "AI CG",
+      "description": "Advanced AI-driven computer graphics generation for various industries."
+    },
+    "seniorContents": {
+      "title": "Senior Contents",
+      "description": "Tailored content creation and curation for the senior demographic."
+    }
+  },
+  "about": {
+    "title": "About Dost11",
+    "subtitle": "Pioneering innovative solutions since 2015",
+    "history": {
+      "title": "Our History and Strengths",
+      "description": "Founded in 2015, Dost11 has been at the forefront of technological innovation, specializing in AI-driven solutions that transform industries. Our strength lies in our diverse team of experts and our commitment to pushing the boundaries of what's possible in tech."
+    },
+    "features": {
+      "title": "Key Features:",
+      "items": [
+        "Cutting-edge AI and machine learning capabilities",
+        "Robust cloud-based infrastructure",
+        "Customizable solutions for various industries",
+        "Dedicated customer support and continuous improvement"
+      ]
+    }
+  }
+}
+
