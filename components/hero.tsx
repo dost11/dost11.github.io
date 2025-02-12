@@ -21,11 +21,11 @@ export default function Hero() {
       <div className="relative z-10 flex gap-4">
         <Button size="lg">
           {t("exploreSolutions")}
-          <ArrowRight className="ml-2 h-4 w-4" />
+          {/* <ArrowRight className="ml-2 h-4 w-4" /> */}
         </Button>
-        <Button variant="outline" size="lg">
+        {/* <Button variant="outline" size="lg">
           {t("scheduleDemo")}
-        </Button>
+        </Button> */}
       </div>
     </section>
   )
