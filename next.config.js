@@ -4,6 +4,8 @@ const withNextIntl = createNextIntlPlugin('./i18n/request.ts'); // app 폴더를
 // -> src 폴더를 사용하는 경우 인자를 생략합니다.
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  // Add any new configuration options introduced in Next.js 15 here
+}
 
 module.exports = withNextIntl(nextConfig)
