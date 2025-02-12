@@ -4,10 +4,13 @@ import type { Metadata } from "next"
 import MouseMoveEffect from "@/components/mouse-move-effect"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
-import { NextIntlClientProvider, useMessages } from "next-intl"
+import { NextIntlClientProvider } from "next-intl"
+import { getMessages } from 'next-intl/server'
 import { notFound } from "next/navigation"
-// import { routing } from '@/i18n/routing'
+import { routing } from '@/i18n/routing'
 import type React from "react"
+
+type Params = Promise<{ locale: never }>
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -20,20 +23,21 @@ export function generateStaticParams() {
   return [{ locale: "en" }, { locale: "ko" }]
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-  params: { locale },
+  params,
 }: {
   children: React.ReactNode
-  params: { locale: string }
+  params: Params
 }) {
-  const messages = useMessages()
+  const { locale } = await params
+  const messages = await getMessages()
 
   if (!messages) notFound()
 
-  // if (!routing.locales.includes(locale)) {
-  //   notFound();
-  // }
+  if (!routing.locales.includes(locale)) {
+    notFound()
+  }
 
   return (
     <html lang={locale} className="dark">
