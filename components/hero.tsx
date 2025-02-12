@@ -7,7 +7,7 @@ export default function Hero() {
 
   return (
     <section className="relative container flex min-h-[calc(100vh-3.5rem)] max-w-screen-2xl flex-col items-center justify-center space-y-8 py-24 text-center md:py-32">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-transparent z-0" />
+      {/* <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-transparent z-0" /> */}
       <div className="relative z-10 space-y-4">
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
           {t("title")}
