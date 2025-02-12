@@ -17,9 +17,16 @@ export default function AboutUs() {
             <p className="mb-6">{t("history.description")}</p>
             <h4 className="text-xl font-semibold mb-2">{t("features.title")}</h4>
             <ul className="list-disc list-inside space-y-2">
-              {t("features.items", { count: 4 }).map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
+              {
+                [
+                  'item-1',
+                  'item-2',
+                  'item-3',
+                  'item-4'
+                ].map((item, index) => (
+                  <li key={index}>{t(`features.items.${item}`)}</li>
+                ))
+              }
             </ul>
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden">

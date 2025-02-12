@@ -59,13 +59,12 @@
     },
     "features": {
       "title": "Key Features:",
-      "items": [
-        "Cutting-edge AI and machine learning capabilities",
-        "Robust cloud-based infrastructure",
-        "Customizable solutions for various industries",
-        "Dedicated customer support and continuous improvement"
-      ]
+      "items": {
+        "item-1": "Cutting-edge AI and machine learning capabilities",
+        "item-2": "Robust cloud-based infrastructure",
+        "item-3": "Customizable solutions for various industries",
+        "item-4": "Dedicated customer support and continuous improvement"
+      }
     }
   }
 }
-
