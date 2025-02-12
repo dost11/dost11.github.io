@@ -1,9 +1,19 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { useTranslations } from "next-intl"
 
 export default function Hero() {
   const t = useTranslations("hero")
+
+  const scrollToSection = (e: React.MouseEvent<HTMLButtonElement>, sectionId: string) => {
+    e.preventDefault()
+    const section = document.getElementById(sectionId)
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" })
+    }
+  }
 
   return (
     <section className="relative container flex min-h-[calc(100vh-3.5rem)] max-w-screen-2xl flex-col items-center justify-center space-y-8 py-24 text-center md:py-32">
@@ -19,7 +29,10 @@ export default function Hero() {
         </p>
       </div>
       <div className="relative z-10 flex gap-4">
-        <Button size="lg">
+        <Button
+          size="lg"
+          onClick={(e) => scrollToSection(e, "solutions")}
+        >
           {t("exploreSolutions")}
           {/* <ArrowRight className="ml-2 h-4 w-4" /> */}
         </Button>
