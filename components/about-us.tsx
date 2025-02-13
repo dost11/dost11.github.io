@@ -30,7 +30,7 @@ export default function AboutUs() {
             </ul>
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden">
-            <Image src="/placeholder.svg?height=400&width=600" alt="Dost11 Team" layout="fill" objectFit="cover" />
+            <Image src="/dost11-about_us.png?height=400&width=600" alt="Dost11 Team" layout="fill" objectFit="cover" />
           </div>
         </div>
       </div>
