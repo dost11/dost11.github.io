@@ -15,8 +15,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  // Redirect to the English version by default
-  redirect("/en")
-  
-  return null
+  return (
+    <html lang="en">
+      <head>
+        <title>Dost11 - Cutting-Edge Software Solutions</title>
+      </head>
+      <body className="bg-background text-foreground antialiased">
+        {children}
+      </body>
+    </html>
+  )
 }
