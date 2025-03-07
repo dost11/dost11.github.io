@@ -12,7 +12,7 @@ export default function AboutUs() {
           <p className="mt-4 text-muted-foreground sm:text-lg">{t("subtitle")}</p>
         </div>
         {/* <div className="grid md:grid-cols-2 gap-12 items-center"> */}
-        <div className="grid gap-12 items-center px-60">
+        <div className="grid gap-12 items-center px-6 md:px-32 lg:px-60">
           <div>
             <h3 className="text-2xl font-semibold mb-4">{t("history.title")}</h3>
             <p className="mb-6">{t("history.description")}</p>
