@@ -1,4 +1,4 @@
-import Image from "next/image"
+// import Image from "next/image"
 import { useTranslations } from "next-intl"
 
 export default function AboutUs() {
@@ -11,7 +11,8 @@ export default function AboutUs() {
           <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">{t("title")}</h2>
           <p className="mt-4 text-muted-foreground sm:text-lg">{t("subtitle")}</p>
         </div>
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        {/* <div className="grid md:grid-cols-2 gap-12 items-center"> */}
+        <div className="grid gap-12 items-center px-60">
           <div>
             <h3 className="text-2xl font-semibold mb-4">{t("history.title")}</h3>
             <p className="mb-6">{t("history.description")}</p>
@@ -29,9 +30,9 @@ export default function AboutUs() {
               }
             </ul>
           </div>
-          <div className="relative h-[400px] rounded-lg overflow-hidden">
+          {/* <div className="relative h-[400px] rounded-lg overflow-hidden">
             <Image src="/dost11-about_us.png?height=400&width=600" alt="Dost11 Team" layout="fill" objectFit="cover" />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
