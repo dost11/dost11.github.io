@@ -50,7 +50,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} className="dark">
-      <body className={`${fontClassName} bg-background text-foreground antialiased flex flex-col min-h-screen`}>
+      <body className={`${fontClassName} bg-background text-foreground antialiased flex flex-col min-h-screen break-keep`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <MouseMoveEffect />
           <Navbar />
