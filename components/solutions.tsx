@@ -36,11 +36,11 @@ export default function Solutions() {
             <div key={solution.title} className="relative overflow-hidden rounded-lg border bg-background p-8">
               <h3 className="text-2xl font-semibold mb-4">{solution.title}</h3>
               <p className="text-muted-foreground mb-6">{solution.description}</p>
-              <Link href={solution.link}>
+              {/* <Link href={solution.link}>
                 <Button variant="outline">
                   {t("learnMore")} <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-              </Link>
+              </Link> */}
             </div>
           ))}
         </div>
