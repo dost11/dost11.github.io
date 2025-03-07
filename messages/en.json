@@ -66,5 +66,12 @@
         "item-4": "Dedicated customer support and continuous improvement"
       }
     }
+  },
+  "footer": {
+    "company name": "Dost11 Inc.",
+    "ceo": "CEO Hyogeol Yang",
+    "brn": "Business Registration Number 478-87-02968",
+    "email": "Email hello@dost11.com",
+    "address": "Address 11F, 255 Seongam-ro, Mapo-gu, Seoul, Korea"
   }
 }
