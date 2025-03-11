@@ -1,0 +1,24 @@
+{
+    "name": "dost11.github.io",
+    "dockerComposeFile": [
+        "docker-compose.yml"
+    ],
+    "service": "dost11.github.io",
+    "workspaceFolder": "/home/vscode/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "eamodio.gitlens"
+            ]
+        }
+    },
+    "features": {},
+    "forwardPorts": [],
+    "portsAttributes": {},
+    "remoteUser": "vscode",
+    "mounts": [
+        "type=bind,source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,readonly"
+    ],
+    "postStartCommand": "chmod 700 $HOME/.ssh && chmod 600 $HOME/.ssh/*",
+    "shutdownAction": "stopCompose"
+}
