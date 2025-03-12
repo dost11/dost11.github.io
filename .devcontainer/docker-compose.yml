@@ -1,0 +1,8 @@
+services:
+  dost11.github.io:
+    image: ghcr.io/dost11/prebuilt-containers/dost11.github.io/build:2872dec5acc1802ad9065f2e3882f6b5e74940ae
+    init: true
+    privileged: true
+    command: sleep infinity
+    volumes:
+      - ..:/home/vscode/workspace:cached
